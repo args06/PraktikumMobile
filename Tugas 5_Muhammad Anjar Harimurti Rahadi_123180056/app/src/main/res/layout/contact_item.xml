@@ -13,42 +13,42 @@
         android:layout_marginVertical="10dp"
         android:layout_marginHorizontal="20dp"
         android:layout_marginRight="20dp"
-        app:cardElevation="6dp">
+        app:cardElevation="6dp"
+        android:backgroundTint="#3C3838">
         <LinearLayout
             android:id="@+id/ll_linear"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:padding="10dp">
-            <ImageView
+
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/iv_photo"
-                android:layout_width="40dp"
+                android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:src="@drawable/ic_baseline_person_24"
+                android:alpha="0.6"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
-                tools:src="@android:color/darker_gray"/>
+                android:tint="@color/white"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_toEndOf="@id/iv_photo"
                 android:layout_toRightOf="@id/iv_photo"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_gravity="center">
                 <TextView
                     android:id="@+id/tv_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:textSize="16sp"
+                    android:textSize="24sp"
                     android:textStyle="bold"
-                    tools:text="@string/movies_name" />
-                <TextView
-                    android:id="@+id/tv_detail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    android:maxLines="2"
-                    tools:text="@string/movies_detail" />
+                    tools:text="@string/contact_name"
+                    android:textColor="@color/white"/>
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

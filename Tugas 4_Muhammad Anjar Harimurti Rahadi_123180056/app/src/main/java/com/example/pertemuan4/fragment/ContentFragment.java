@@ -34,6 +34,7 @@ public class ContentFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        
         recyclerView = view.findViewById(R.id.rv_recycler_view);
         recyclerView.setHasFixedSize(true);
 

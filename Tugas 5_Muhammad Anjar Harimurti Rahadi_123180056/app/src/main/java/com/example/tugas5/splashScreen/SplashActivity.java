@@ -1,4 +1,4 @@
-package com.example.pertemuan4.splashScreen;
+package com.example.tugas5.splashScreen;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,8 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.pertemuan4.MainActivity;
-import com.example.pertemuan4.R;
+import com.example.tugas5.MainActivity;
+import com.example.tugas5.R;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -22,6 +22,5 @@ public class SplashActivity extends AppCompatActivity {
             startActivity(homeIntent);
             finish();
         }, SPLASH_TIME_OUT);
-
     }
 }
